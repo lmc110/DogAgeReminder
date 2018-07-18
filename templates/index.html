@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Pet Age Reminder{% endblock %}
+{% block path %}/static/index.css{% endblock %}
+{% block content %}
+
+
+<div id="pet-age-form">
+    <form action="/calculate" method="post" class="pure-form">
+        <fieldset>
+            <label><input id="pet-age" type="date" name="pet-age" required="required"/></label>
+            <input type="submit" value="Get Age!" class="pure-button pure-button-primary"/>
+        </fieldset>
+    </form>
+</div>
+
+{% endblock %}
