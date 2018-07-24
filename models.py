@@ -1,4 +1,4 @@
-from DogAgeReminder import db, app
+from init import db, app
 
 
 class User(db.Model):

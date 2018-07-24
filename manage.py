@@ -5,7 +5,7 @@ import sys
 from flask_script import Manager
 
 
-import DogAgeReminder as app_module
+import main as app_module
 app = app_module.app
 
 
