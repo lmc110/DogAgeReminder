@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock %}
+{% block path %}/static/login.css{% endblock %}
+{% block content %}
+
+    <h3>Already have an account?</h3>
+        <form action="/login" role="form" class="pure-form pure-form-stacked" method = "post">
+            <input type="hidden" name="url" value="{{ request.args.url }}">
+            <div class="fieldset">
+               <h2>Log In</h2>
+               <label for="login-user" hidden>Username</label>
+               <input id="login-user" type="text" placeholder="Username" name="user" value ="{{ request.form.username }}">
+               <label for="login-password" hidden>Password</label>
+               <input id="login-password" type="password" placeholder="Password" name="password" value="{{ request.form.password }}">
+               <button type="submit" class="pure-button pure-button-primary" value="login">Log In</button>
+            </div>
+        </form>
+
+</form>
+
+{% endblock %}
